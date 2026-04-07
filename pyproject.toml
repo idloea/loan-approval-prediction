@@ -5,3 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "databricks-connect>=13",
+]
+
+test = [
+    "pyspark>=3.4.0, <4",
+]
